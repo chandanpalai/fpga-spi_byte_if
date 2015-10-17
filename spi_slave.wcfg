@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="C:/Users/Coert/Desktop/src/spi_slave - BYTE/spi_slave_tb_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="spi_slave_tb" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="2" />
+   <wvobject fp_name="group11" type="group">
+      <obj_property name="label">BYTE</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/spi_slave_tb/uut/byte_if/sysClk" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">sysClk</obj_property>
+         <obj_property name="ObjectShortName">sysClk</obj_property>
+      </wvobject>
+      <wvobject fp_name="/spi_slave_tb/uut/byte_if/SCLK" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">SCLK</obj_property>
+         <obj_property name="ObjectShortName">SCLK</obj_property>
+      </wvobject>
+      <wvobject fp_name="/spi_slave_tb/uut/byte_if/SCLK_rising" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">SCLK_rising</obj_property>
+         <obj_property name="ObjectShortName">SCLK_rising</obj_property>
+      </wvobject>
+      <wvobject fp_name="/spi_slave_tb/uut/byte_if/SCLK_falling" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">SCLK_falling</obj_property>
+         <obj_property name="ObjectShortName">SCLK_falling</obj_property>
+      </wvobject>
+      <wvobject fp_name="/spi_slave_tb/MOSI" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">MOSI</obj_property>
+         <obj_property name="ObjectShortName">MOSI</obj_property>
+      </wvobject>
+      <wvobject fp_name="/spi_slave_tb/uut/byte_if/data" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">data[7:0]</obj_property>
+         <obj_property name="ObjectShortName">data[7:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/spi_slave_tb/uut/byte_if/rxValid" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">rxValid</obj_property>
+         <obj_property name="ObjectShortName">rxValid</obj_property>
+      </wvobject>
+      <wvobject fp_name="/spi_slave_tb/uut/byte_if/rx" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">rx[7:0]</obj_property>
+         <obj_property name="ObjectShortName">rx[7:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/spi_slave_tb/uut/byte_if/tx" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">tx[7:0]</obj_property>
+         <obj_property name="ObjectShortName">tx[7:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/spi_slave_tb/MISO" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">MISO</obj_property>
+         <obj_property name="ObjectShortName">MISO</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group18" type="group">
+      <obj_property name="label">MESSAGE</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+</wave_config>
