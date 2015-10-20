@@ -1,17 +1,18 @@
 `timescale 1ns / 100ps
+`default_nettype none
 // (c) 2015, by Coert Vonk
-// http://www.coertvonk.com/technology/logic/fpga-spi-slave-in-verilog-13067
+// http://www.coertvonk.com/technology/logic/fpga-spi-slave-in-verilog-13067/5
 
 // for SPI MODE 3
-module spi_slave_byte( input sysClk,
-                       input usrReset,
-					        input SCLK,           // SPI clock
-						     input MOSI,           // SPI master out, slave in
-						     output MISO,          // SPI slave in, master out
-						     input SS,             // SPI slave select
-							  output rxValid,       // BYTE received is valid
-						     output reg [7:0] rx,  // BYTE received
-						     input [7:0] tx );     // BYTE to transmit
+module spi_slave_byte( input wire sysClk,
+                       input wire usrReset,
+					        input wire SCLK,        // SPI clock
+						     input wire MOSI,        // SPI master out, slave in
+						     output wire MISO,       // SPI slave in, master out
+						     input wire SS,          // SPI slave select
+							  output wire rxValid,    // BYTE received is valid
+						     output reg [7:0] rx,    // BYTE received
+						     input wire [7:0] tx );  // BYTE to transmit
 
    // synchronize SCLK to FPGA domain clock using a two-stage shift-register
 	// (bit [0] takes the hit of timing errors)

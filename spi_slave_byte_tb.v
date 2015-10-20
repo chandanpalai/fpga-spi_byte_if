@@ -1,6 +1,7 @@
 `timescale 1ns / 100ps
+`default_nettype none
 // (c) 2015, by Coert Vonk
-// http://www.coertvonk.com/technology/logic/fpga-spi-slave-in-verilog-13067
+// http://www.coertvonk.com/technology/logic/fpga-spi-slave-in-verilog-13067/5
 
 module spi_slave_tb;  // MODE_3
 
@@ -50,8 +51,9 @@ module spi_slave_tb;  // MODE_3
 			$display( "LED1=%b misoData %h", LED1, misoData );
 
 			#10 SS = 1'b1;   // de-activate slave-select
-			MOSI = 1'bz;			
-			//#200 $finish;
+			MOSI = 1'bz;	
+
+         $display("EOT");			
 		end
 
 	task exchange_byte ( input [7:0] mosiData,
